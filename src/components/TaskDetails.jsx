@@ -1,7 +1,9 @@
 const TaskDetails = () => {
   return (
     <>
-      <section></section>
+      <section>
+        <p>TaskDetails</p>
+      </section>
     </>
   );
 };
