@@ -23,7 +23,7 @@ const AddTask = () => {
             Task Management Application
           </h1>
         </article>
-        <article className=" sm:w-3/4 w-full p-5 sm:p-2 mx-auto">
+        <article className="  w-full sm:p-10 p-5 mx-auto">
           <form
             onSubmit={() => handleAddTask()}
             className="w-full bg-gray-200 md:p-6 p-3"
