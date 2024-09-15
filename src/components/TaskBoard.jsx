@@ -1,9 +1,11 @@
+import AddTask from "./AddTask";
+
 const TaskBoard = () => {
   return (
     <>
-      <section>
-        <p>TaskBoard</p>
-      </section>
+      <main className=" w-full min-h-screen ">
+        <AddTask />
+      </main>
     </>
   );
 };
