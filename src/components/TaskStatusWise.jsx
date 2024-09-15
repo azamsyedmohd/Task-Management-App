@@ -4,7 +4,7 @@ import CompletedTasks from "./CompletedTasks";
 const TaskStatusWise = () => {
   return (
     <>
-      <section className="w-full p-10 flex flex-col gap-6 md:flex-row ">
+      <section className="w-full px-10 py-2 flex flex-col gap-6 md:flex-row ">
         <TodoTasks />
         <InProgressTasks />
         <CompletedTasks />
