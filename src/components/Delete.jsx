@@ -11,7 +11,7 @@ const Delete = () => {
         >
           Delete
         </button>
-        {erase && <DeleteModal />}
+        {erase && <DeleteModal setErase={setErase} />}
       </article>
     </>
   );

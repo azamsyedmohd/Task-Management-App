@@ -6,12 +6,12 @@ const Edit = () => {
     <>
       <article>
         <button
-          className="bg-green-600 text-white py-1 px-2 rounded-md hover:cursor-pointer hover:scale-110"
+          className="bg-green-500 text-white py-1 px-2 rounded-md"
           onClick={() => setModal(!modal)}
         >
           Edit
         </button>
-        {modal && <EditModal />}
+        {modal && <EditModal setModal={setModal} />}
       </article>
     </>
   );
