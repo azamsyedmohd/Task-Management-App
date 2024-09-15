@@ -23,10 +23,10 @@ const AddTask = () => {
             Task Management Application
           </h1>
         </article>
-        <article className="  w-full sm:p-10 p-5 mx-auto">
+        <article className="w-full sm:p-10 p-5 mx-auto">
           <form
             onSubmit={() => handleAddTask()}
-            className="w-full bg-gray-200 md:p-6 p-3"
+            className="w-full bg-gray-200 md:p-6 p-3 rounded-lg"
           >
             <div className="w-full flex flex-col md:gap-2 gap-2">
               <label className="lg:text-2xl md:text-xl text-lg italic font-thin">
