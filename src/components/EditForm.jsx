@@ -7,7 +7,11 @@ import SuccessEditTodo from "./SuccessEditTodo";
 const EditForm = ({ setModal, task }) => {
   const [description, setDescription] = useState(task?.todo);
   const [checkedValue, setCheckedValue] = useState(
-    task?.completed ? "Completed" : "To-Do"
+    task?.completed
+      ? "Completed"
+      : task?.completed === false
+      ? "To-Do"
+      : "In-Progress"
   );
   const dispatch = useDispatch();
   const { error, successMessage } = useSelector((state) => state.tasks);
