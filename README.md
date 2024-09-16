@@ -69,4 +69,6 @@
  - Redux: All Redux logic is contained within the taskSlice.js file, which you can extend if you need additional features.
 
 ## Contact
-For any questions, feel free to contact me at smazamamu@gmail.com.
+ For any questions, feel free to contact me at smazamamu@gmail.com.
+## Project Link
+ Project Link : https://magnificent-elf-8b25fa.netlify.app/
