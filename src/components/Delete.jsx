@@ -1,6 +1,8 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 import DeleteModal from "./DeleteModal";
-const Delete = () => {
+const Delete = ({ task }) => {
+  console.log(task);
   const [erase, setErase] = useState(false);
   return (
     <>
@@ -11,7 +13,7 @@ const Delete = () => {
         >
           Delete
         </button>
-        {erase && <DeleteModal setErase={setErase} />}
+        {erase && <DeleteModal setErase={setErase} task={task} />}
       </article>
     </>
   );

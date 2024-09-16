@@ -2,7 +2,6 @@
 import TodoTasks from "./TodoTasks";
 import InProgressTasks from "./InProgressTasks";
 import CompletedTasks from "./CompletedTasks";
-// eslint-disable-next-line react/prop-types
 const TaskStatusWise = ({ tasks }) => {
   const completedTasks = tasks?.filter((task) => task?.completed);
   const todosTasks = tasks?.filter((task) => task?.completed === false);

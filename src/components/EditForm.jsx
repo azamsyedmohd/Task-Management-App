@@ -4,7 +4,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { editTask, clearMessages } from "../utils/taskSlice";
 import ErrorEditTodo from "./ErrorEditTodo";
 import SuccessEditTodo from "./SuccessEditTodo";
-// eslint-disable-next-line react/prop-types
 const EditForm = ({ setModal, task }) => {
   const [description, setDescription] = useState(task?.todo);
   const [checkedValue, setCheckedValue] = useState(
