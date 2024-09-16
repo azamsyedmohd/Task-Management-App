@@ -1,10 +1,13 @@
+/* eslint-disable react/prop-types */
 import InProgressTask from "./InProgressTask";
-const InProgressTasks = () => {
+const InProgressTasks = ({ tasks }) => {
   return (
     <>
       <section className="flex-1 bg-yellow-300 p-3 rounded-md text-white font-bold italic">
         <h2>In-Progress Tasks!</h2>
-        <InProgressTask />
+        {tasks.map((task) => (
+          <InProgressTask task={task} key={task?.id} />
+        ))}
       </section>
     </>
   );
