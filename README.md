@@ -36,7 +36,7 @@
 
  -  git clone https://github.com/azamsyedmohd/Task-Management-App
  -  cd your-project
- -  Install dependencies: (npm run dev)
+ -  Install dependencies
  -  If you are using npm: (npm install )
 
 ## Start the application:
