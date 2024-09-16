@@ -9,9 +9,9 @@
 -  Edit Task: Update the description or status of an existing task.
 -  Delete Task: Remove a task from the list.
  - Task Status: Tasks can have three statuses:
-   To-Do
-   In-Progress
-   Completed
+   -- To-Do
+   -- In-Progress
+   -- Completed
  - Pop-up Modal: Tasks are edited via a pop-up modal that centers on the screen.
 ## Tech Stack
 ### Frontend:
