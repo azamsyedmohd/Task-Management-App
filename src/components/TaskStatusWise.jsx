@@ -5,7 +5,7 @@ import CompletedTasks from "./CompletedTasks";
 const TaskStatusWise = ({ tasks }) => {
   return (
     <>
-      <section className="w-full px-10 py-2 flex flex-col gap-6 md:flex-row ">
+      <section className="w-full px-10 py-2 flex flex-col gap-6 lg:flex-row ">
         <TodoTasks tasks={tasks} />
         <InProgressTasks tasks={tasks} />
         <CompletedTasks tasks={tasks} />
