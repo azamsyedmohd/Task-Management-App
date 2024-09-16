@@ -34,16 +34,16 @@
 ## Installation
  Clone the repository:
 
-  git clone https://github.com/azamsyedmohd/Task-Management-App
-  cd your-project
-  Install dependencies: (npm run dev)
-  If you are using npm: (npm install )
+ -  git clone https://github.com/azamsyedmohd/Task-Management-App
+ -  cd your-project
+ -  Install dependencies: (npm run dev)
+ -  If you are using npm: (npm install )
 
 ## Start the application:
 
- For npm: npm run dev
- For yarn: yarn start
- The application will run on http://localhost:5173 by default ( vite is used in the application )
+ - For npm: npm run dev
+ - For yarn: yarn start
+ - The application will run on http://localhost:5173 by default ( vite is used in the application )
 
 
 ## Key Files and Directories:
