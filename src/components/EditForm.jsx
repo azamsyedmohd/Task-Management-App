@@ -49,7 +49,7 @@ const EditForm = ({ setModal, task }) => {
             id: task?.id,
             updates: {
               todo: description,
-              inProgress: "In-Progress",
+              completed: null,
             },
           })
         );
