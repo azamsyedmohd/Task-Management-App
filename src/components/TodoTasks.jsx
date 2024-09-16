@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
-import TodoTask from "./ToDoTask";
-
+import TodoTask from "./Task";
 const TodoTasks = ({ tasks }) => {
   return (
     <>
