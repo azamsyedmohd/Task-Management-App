@@ -1,7 +1,5 @@
-Your Project Name
-Overview
-This project is a Task Management Application built using React and Redux for managing tasks with basic CRUD operations (Create, Read, Update, Delete). The tasks can be categorized as "To-Do", "In-Progress", or "Completed", with features to edit and delete tasks. Pop-up modals are used for task editing and notifications are displayed for success or error states.
 
+<<<<<<< HEAD
 Features
 Add Task: Create a new task with a description and status.
 Edit Task: Update the description or status of an existing task.
@@ -134,3 +132,5 @@ If you'd like to contribute to this project, feel free to fork the repository an
 
 Contact
 For any questions, feel free to contact me at [your-email@example.com].
+=======
+>>>>>>> 871b9a5162c412b4b9b85d87856dc6dba993df7e
