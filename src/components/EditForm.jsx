@@ -6,15 +6,10 @@ import ErrorEditTodo from "./ErrorEditTodo";
 import SuccessEditTodo from "./SuccessEditTodo";
 const EditForm = ({ setModal, task }) => {
   const [description, setDescription] = useState(task?.todo);
-  const [checkedValue, setCheckedValue] = useState(
-    task?.completed
-      ? "Completed"
-      : task?.completed === false
-      ? "To-Do"
-      : "In-Progress"
-  );
+  const [checkedValue, setCheckedValue] = useState(task?.completed);
   const dispatch = useDispatch();
   const { error, successMessage } = useSelector((state) => state.tasks);
+  console.log("kya", checkedValue);
   useEffect(() => {
     if (error || successMessage) {
       setTimeout(() => {
