@@ -1,21 +1,64 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { addTask, clearMessages } from "../utils/taskSlice";
+import { v4 as uuidv4 } from "uuid";
+import ErrorAddTodo from "./ErrorAddTodo";
+import SuccessAddTodo from "./SuccessAddTodo";
 const AddForm = () => {
   const [checkedValue, setCheckedValue] = useState(null);
   const [taskDescription, setTaskDescription] = useState("");
+  const dispatch = useDispatch();
+  const { error, successMessage } = useSelector((state) => state.tasks);
+  useEffect(() => {
+    if (error || successMessage) {
+      setTimeout(() => {
+        dispatch(clearMessages());
+      }, 3000);
+    }
+  }, [error, successMessage, dispatch]);
   const handleChange = (value) => {
     setCheckedValue(value);
   };
   const handleTaskData = (event) => {
     setTaskDescription(event.target.value);
   };
-  const handleAddTask = () => {
-    // Code of task added;
-    console.log("Task added");
+  const handleAddTask = (event) => {
+    event.preventDefault();
+    const id = uuidv4();
+    if (taskDescription.trim()) {
+      if (checkedValue === "To-Do") {
+        dispatch(
+          addTask({
+            id: id,
+            todo: taskDescription,
+            completed: false,
+          })
+        );
+      } else if (checkedValue === "Completed") {
+        dispatch(
+          addTask({
+            id: id,
+            todo: taskDescription,
+            completed: true,
+          })
+        );
+      } else {
+        dispatch(
+          addTask({
+            id: id,
+            todo: taskDescription,
+            inProgress: "In-Progress",
+          })
+        );
+      }
+    }
     setTaskDescription("");
     setCheckedValue(null);
   };
   return (
     <>
+      {error && <ErrorAddTodo />}
+      {successMessage && <SuccessAddTodo />}
       <form
         onSubmit={() => handleAddTask()}
         className="w-full bg-gray-200 md:p-6 p-3 rounded-lg"
