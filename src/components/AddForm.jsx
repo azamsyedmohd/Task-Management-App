@@ -29,7 +29,7 @@ const AddForm = () => {
       if (checkedValue === "To-Do") {
         dispatch(
           addTask({
-            id: id,
+            userId: Math.round(parseInt(id.split("-")[0], 16) / 100000000),
             todo: taskDescription,
             completed: false,
           })
@@ -37,7 +37,7 @@ const AddForm = () => {
       } else if (checkedValue === "Completed") {
         dispatch(
           addTask({
-            id: id,
+            userId: Math.round(parseInt(id.split("-")[0], 16) / 100000000),
             todo: taskDescription,
             completed: true,
           })
@@ -45,9 +45,9 @@ const AddForm = () => {
       } else {
         dispatch(
           addTask({
-            id: id,
+            userId: Math.round(parseInt(id.split("-")[0], 16) / 100000000),
             todo: taskDescription,
-            inProgress: "In-Progress",
+            completed: null,
           })
         );
       }
@@ -60,7 +60,7 @@ const AddForm = () => {
       {error && <ErrorAddTodo />}
       {successMessage && <SuccessAddTodo />}
       <form
-        onSubmit={() => handleAddTask()}
+        onSubmit={(event) => handleAddTask(event)}
         className="w-full bg-gray-200 md:p-6 p-3 rounded-lg"
       >
         <div className="w-full flex flex-col md:gap-2 gap-2">
