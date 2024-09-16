@@ -21,7 +21,7 @@ const TaskBoard = () => {
   }, [dispatch, status]);
   return (
     <>
-      <main className=" w-full min-h-screen relative">
+      <main className=" w-full min-h-screen ">
         {status === "loading" && <Loading />}
         {status === "failed" && <Failed />}
         {status === "succeeded" && (

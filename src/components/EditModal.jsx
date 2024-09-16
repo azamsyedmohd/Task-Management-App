@@ -4,9 +4,11 @@ import EditForm from "./EditForm";
 const EditModal = ({ setModal, task }) => {
   return (
     <>
-      <section className="absolute md:left-1/4  sm:left-40 left-8 md:top-1/4 top-28   lg:w-1/2 mx-auto z-10 bg-white md:p-2 p-1 rounded-md ">
-        <EditForm setModal={setModal} task={task} />
-      </section>
+      <article className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+        <section className=" bg-white md:p-2 p-1 rounded-md ">
+          <EditForm setModal={setModal} task={task} />
+        </section>
+      </article>
     </>
   );
 };
