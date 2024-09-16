@@ -1,6 +1,7 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 import EditModal from "./EditModal";
-const Edit = () => {
+const Edit = ({ task }) => {
   const [modal, setModal] = useState(false);
   return (
     <>
@@ -11,7 +12,7 @@ const Edit = () => {
         >
           Edit
         </button>
-        {modal && <EditModal setModal={setModal} />}
+        {modal && <EditModal setModal={setModal} task={task} />}
       </article>
     </>
   );
