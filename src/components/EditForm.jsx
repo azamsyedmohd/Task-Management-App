@@ -6,8 +6,10 @@ import ErrorEditTodo from "./ErrorEditTodo";
 import SuccessEditTodo from "./SuccessEditTodo";
 // eslint-disable-next-line react/prop-types
 const EditForm = ({ setModal, task }) => {
-  const [description, setDescription] = useState("");
-  const [checkedValue, setCheckedValue] = useState(null);
+  const [description, setDescription] = useState(task?.todo);
+  const [checkedValue, setCheckedValue] = useState(
+    task?.completed ? "Completed" : "To-Do"
+  );
   const dispatch = useDispatch();
   const { error, successMessage } = useSelector((state) => state.tasks);
   useEffect(() => {
@@ -20,7 +22,7 @@ const EditForm = ({ setModal, task }) => {
   const handleChange = (value) => {
     setCheckedValue(value);
   };
-  const handleEdit = () => {
+  const handleEdit = (event) => {
     // Edit Code will be written
     event.preventDefault();
     if (description.trim()) {
@@ -28,24 +30,27 @@ const EditForm = ({ setModal, task }) => {
         dispatch(
           editTask({
             id: task?.id,
-            todo: description,
-            completed: false,
+            updates: {
+              todo: description,
+              completed: false,
+            },
           })
         );
       } else if (checkedValue === "Completed") {
         dispatch(
           editTask({
             id: task?.id,
-            todo: description,
-            completed: true,
+            updates: { todo: description, completed: true },
           })
         );
       } else {
         dispatch(
           editTask({
             id: task?.id,
-            todo: description,
-            inProgress: "In-Progress",
+            updates: {
+              todo: description,
+              inProgress: "In-Progress",
+            },
           })
         );
       }
@@ -57,7 +62,7 @@ const EditForm = ({ setModal, task }) => {
     <>
       {error && <ErrorEditTodo />}
       {successMessage && <SuccessEditTodo />}
-      <form>
+      <form onSubmit={(event) => handleEdit(event)}>
         <article className="w-full px-4 ">
           <div className="flex flex-col gap-1">
             <label className="text-black font-thin lg:text-2xl md:text-xl text-lg">
@@ -117,8 +122,8 @@ const EditForm = ({ setModal, task }) => {
                 Cancel
               </button>
               <button
+                type="submit"
                 className="text-white bg-green-700 py-1 px-3 font-semibold lg:text-xl md:text-lg text-sm hover:cursor-pointer hover:scale-110"
-                onClick={() => handleEdit}
               >
                 Edit
               </button>
