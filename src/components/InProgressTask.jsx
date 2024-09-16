@@ -10,7 +10,7 @@ const InProgressTask = ({ task }) => {
         <div className="flex flex-row md:flex-col gap-2 mt-2">
           <Edit />
           <Delete />
-          <Details />
+          <Details id={task?.id} />
         </div>
       </article>
     </>
