@@ -63,8 +63,8 @@
  ### Deleting a Task:
    Click the "Delete" button next to a task, and it will be removed from the list.
 ## Customization
- Styling: The project uses Tailwind CSS for responsive styling. You can customize the UI by modifying classes directly in the JSX files.
- Redux: All Redux logic is contained within the taskSlice.js file, which you can extend if you need additional features.
+ - Styling: The project uses Tailwind CSS for responsive styling. You can customize the UI by modifying classes directly in the JSX files.
+ - Redux: All Redux logic is contained within the taskSlice.js file, which you can extend if you need additional features.
 
 ## Contact
 For any questions, feel free to contact me at smazamamu@gmail.com.
