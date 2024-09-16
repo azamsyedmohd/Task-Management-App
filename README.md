@@ -45,12 +45,11 @@
  For yarn: yarn start
  The application will run on http://localhost:5173 by default ( vite is used in the application )
 
-## Project Structure
 
 ## Key Files and Directories:
-  src/components: Contains all the React components used in the application, including:
-  src/utils/taskSlice.js: Contains the Redux slice for managing tasks, including async thunks for fetching, creating, updating, and deleting tasks.
-  src/utils/apis.js: This file contains the API functions for interacting with the backend or external APIs.
+ - src/components: Contains all the React components used in the application, including:
+ - src/utils/taskSlice.js: Contains the Redux slice for managing tasks, including async thunks for fetching, creating, updating, and deleting tasks.
+ - src/utils/apis.js: This file contains the API functions for interacting with the backend or external APIs.
 
 ## Usage
  ### Adding a Task:
