@@ -56,6 +56,7 @@ const EditForm = ({ setModal, task }) => {
     }
     setDescription("");
     setCheckedValue(null);
+    setModal(false);
   };
   return (
     <>
