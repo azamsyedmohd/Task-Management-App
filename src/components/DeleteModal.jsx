@@ -23,8 +23,8 @@ const DeleteModal = ({ setErase, task }) => {
   };
   return (
     <>
-      {error && <ErrorDeleteTodo />}
-      {successMessage && <SuccessDeleteTodo />}
+      {error && <ErrorDeleteTodo error={error} />}
+      {successMessage && <SuccessDeleteTodo message={successMessage} />}
       <form onSubmit={(event) => handleDelete(event)}>
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
           <section className=" bg-white text-black md:p-8 p-2 rounded-md">

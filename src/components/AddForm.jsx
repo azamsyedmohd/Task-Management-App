@@ -57,8 +57,8 @@ const AddForm = () => {
   };
   return (
     <>
-      {error && <ErrorAddTodo />}
-      {successMessage && <SuccessAddTodo />}
+      {error && <ErrorAddTodo error={error} />}
+      {successMessage && <SuccessAddTodo message={successMessage} />}
       <form
         onSubmit={(event) => handleAddTask(event)}
         className="w-full bg-gray-200 md:p-6 p-3 rounded-lg"

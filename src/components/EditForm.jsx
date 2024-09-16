@@ -65,8 +65,8 @@ const EditForm = ({ setModal, task }) => {
   };
   return (
     <>
-      {error && <ErrorEditTodo />}
-      {successMessage && <SuccessEditTodo />}
+      {error && <ErrorEditTodo error={error} />}
+      {successMessage && <SuccessEditTodo message={successMessage} />}
       <form onSubmit={(event) => handleEdit(event)}>
         <article className="w-full px-4 ">
           <div className="flex flex-col gap-1">
