@@ -1,6 +1,6 @@
 
 
-# Your Project Name
+# Task Management Application
 ## Overview
 ### This project is a Task Management Application built using React and Redux for managing tasks with basic CRUD operations (Create, Read, Update, Delete). The tasks can be categorized as "To-Do", "In-Progress", or "Completed", with features to edit and delete tasks. Pop-up modals are used for task editing and notifications are displayed for success or error states.
 
@@ -49,16 +49,6 @@ The application will run on http://localhost:5173 by default ( vite is used in t
 
 ## Project Structure
 
-.
-├── public/                  # Public static files
-├── src/
-│   ├── components/          # React components (e.g., EditForm, TaskList, etc.)
-│   ├── utils/               # Redux logic (taskSlice, API calls)
-│   ├── App.js               # Main application component
-│   ├── index.js             # Entry point for React
-│   └── ...                  # Other source files
-├── package.json             # Project metadata and dependencies
-└── README.md                # Project documentation
 ## Key Files and Directories:
  src/components: Contains all the React components used in the application, including:
  src/utils/taskSlice.js: Contains the Redux slice for managing tasks, including async thunks for fetching, creating, updating, and deleting tasks.
