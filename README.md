@@ -76,6 +76,7 @@ Project Structure
 php
 Copy code
 .
+<<<<<<< HEAD
 ├── public/ # Public static files
 ├── src/
 │ ├── components/ # React components (e.g., EditForm, TaskList, etc.)
@@ -85,6 +86,17 @@ Copy code
 │ └── ... # Other source files
 ├── package.json # Project metadata and dependencies
 └── README.md # Project documentation
+=======
+├── public/                  # Public static files
+├── src/
+│   ├── components/          # React components (e.g., EditForm, TaskList, etc.)
+│   ├── utils/               # Redux logic (taskSlice, API calls)
+│   ├── App.js               # Main application component
+│   ├── index.js             # Entry point for React
+│   └── ...                  # Other source files
+├── package.json             # Project metadata and dependencies
+└── README.md                # Project documentation
+>>>>>>> 00e784dc28175443f698afe7aa1874147490430f
 Key Files and Directories:
 src/components: Contains all the React components used in the application, including:
 
