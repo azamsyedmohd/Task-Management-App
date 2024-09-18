@@ -25,7 +25,7 @@
 ### Tooling:
   Redux Toolkit for managing async actions and state.
   Tailwind CSS for styling and responsive design.
-## Setup Instructions
+## Setup Instructions ->
   Prerequisites
   Ensure you have the following installed on your machine:
 
