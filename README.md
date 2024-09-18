@@ -13,7 +13,7 @@
     In-Progress
     Completed
  - Pop-up Modal: Tasks are edited via a pop-up modal that centers on the screen.
-## Tech Stack
+## Tech Stack ->
 ### Frontend:
 
  React
@@ -31,7 +31,7 @@
 
   Node.js (v14 or later)
   npm or yarn
-## Installation
+## Installation ->
  Clone the repository:
 
  -  git clone https://github.com/azamsyedmohd/Task-Management-App
