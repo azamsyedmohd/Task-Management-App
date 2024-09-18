@@ -39,19 +39,19 @@
  -  Install dependencies
  -  If you are using npm: (npm install )
 
-## Start the application:
+## Start the application ->
 
  - For npm: npm run dev
  - For yarn: yarn start
  - The application will run on http://localhost:5173 by default ( vite is used in the application )
 
 
-## Key Files and Directories:
+## Key Files and Directories ->
  - src/components: Contains all the React components used in the application, including:
  - src/utils/taskSlice.js: Contains the Redux slice for managing tasks, including async thunks for fetching, creating, updating, and deleting tasks.
  - src/utils/apis.js: This file contains the API functions for interacting with the backend or external APIs.
 
-## Usage
+## Usage ->
  ### Adding a Task:
 
    - Enter the task description and select the status ("To-Do", "In-Progress", "Completed").
@@ -62,13 +62,13 @@
   -  The pop-up modal will appear, allowing you to update the task description or status.
  ### Deleting a Task:
    - Click the "Delete" button next to a task, and it will be removed from the list.
-## Customization
+## Customization ->
  - Styling: The project uses Tailwind CSS for responsive styling. You can customize the UI by modifying classes directly in the JSX files.
  - Redux: All Redux logic is contained within the taskSlice.js file, which you can extend if you need additional features.
 
-## Contact
+## Contact ->
  -  For any questions, feel free to contact me at smazamamu@gmail.com.
-## Project Link 🎉
+## Project Link 🎉 
 -  Project Link : https://magnificent-elf-8b25fa.netlify.app/
 ## Video Link 🎉
 -  Video Link : https://drive.google.com/file/d/16tdhGKcVtSBxpIDUyySCKCqkp3quLoN7/view?usp=sharing
