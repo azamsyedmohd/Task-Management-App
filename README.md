@@ -1,4 +1,4 @@
-# 🧡Task Management Application🚀!
+# 🧡Task Management Application🚀
 ## Overview
 - This project is a Task Management Application built using React and Redux for managing tasks with basic CRUD operations (Create, Read, Update, Delete). 
 - The tasks can be categorized as "To-Do", "In-Progress", or "Completed", with features to edit and delete tasks. 
