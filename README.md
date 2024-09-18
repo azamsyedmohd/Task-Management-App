@@ -68,7 +68,7 @@
 
 ## Contact
  -  For any questions, feel free to contact me at smazamamu@gmail.com.
-## Project Link
+## Project Link 🎉
 -  Project Link : https://magnificent-elf-8b25fa.netlify.app/
 ## Video Link 🎉
 -  Video Link : https://drive.google.com/file/d/16tdhGKcVtSBxpIDUyySCKCqkp3quLoN7/view?usp=sharing
