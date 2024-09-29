@@ -52,15 +52,15 @@
  - src/utils/apis.js: This file contains the API functions for interacting with the backend or external APIs.
 
 ## Usage ->
- ### Adding a Task:
+ ### Adding a Task :-
 
    - Enter the task description and select the status ("To-Do", "In-Progress", "Completed").
    - Click "Add Task" to save it to the list.
- ### Editing a Task:
+ ### Editing a Task :-
 
   -  Click the "Edit" button next to a task.
   -  The pop-up modal will appear, allowing you to update the task description or status.
- ### Deleting a Task:
+ ### Deleting a Task :-
    - Click the "Delete" button next to a task, and it will be removed from the list.
 ## Customization ->
  - Styling: The project uses Tailwind CSS for responsive styling. You can customize the UI by modifying classes directly in the JSX files.
